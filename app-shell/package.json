@@ -1,0 +1,66 @@
+{
+  "name": "@openmrs/app-shell",
+  "version": "0.1.6",
+  "description": "The OpenMRS application shell (demo).",
+  "keywords": [
+    "piral"
+  ],
+  "dependencies": {
+    "i18next": "^19.3.3",
+    "i18next-browser-languagedetector": "^4.2.0",
+    "i18next-icu": "^1.4.0",
+    "kremling": "^2.0.4",
+    "piral-containers": "next",
+    "piral-core": "next",
+    "piral-feeds": "next",
+    "piral-menu": "next",
+    "piral-modals": "next",
+    "piral-notifications": "next",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-i18next": "^11.3.4",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "rxjs": "^6.5.5"
+  },
+  "scripts": {
+    "start": "piral debug",
+    "build": "piral build",
+    "build:emulator": "piral build --type develop && mv dist/develop/*.tgz dist/develop/openmrs-app-shell.tgz",
+    "upgrade": "piral upgrade",
+    "release": "npm run build:emulator && npm publish dist/develop/openmrs-app-shell.tgz"
+  },
+  "app": "./src/index.html",
+  "pilets": {
+    "files": [
+      ".editorconfig",
+      ".gitignore",
+      "src/mocks",
+      "prettier.config.js"
+    ],
+    "externals": [
+      "kremling",
+      "i18next",
+      "react-i18next",
+      "rxjs"
+    ],
+    "scripts": {},
+    "validators": {},
+    "devDependencies": {},
+    "preScaffold": "",
+    "postScaffold": "",
+    "preUpgrade": "",
+    "postUpgrade": ""
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-router": "latest",
+    "@types/react-router-dom": "latest",
+    "piral-cli": "next",
+    "piral-cli-parcel": "next",
+    "sass": "^1.26.7",
+    "typescript": "latest"
+  }
+}

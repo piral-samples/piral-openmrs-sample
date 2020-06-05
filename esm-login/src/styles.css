@@ -1,0 +1,128 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 3rem;
+  --logo-red: #e15d29;
+  --logo-orange: #e4a12a;
+  --logo-purple: #545090;
+  --logo-green: #008877;
+  --logo-black: #1a1919;
+}
+
+.logo-img {
+  margin-bottom: 3rem;
+  max-width: 100%;
+}
+
+.submit-btn {
+  width: 100%;
+}
+
+.icon-btn {
+  cursor: pointer;
+}
+
+.error-msg {
+  color: var(--omrs-color-danger);
+}
+
+.powered-by-txt {
+  text-align: center;
+  color: var(--omrs-color-ink-low-contrast);
+}
+
+.powered-by-logo {
+  height: 2.5625rem;
+  width: 8.5rem;
+  --logo-red: rgba(19, 19, 21, 0.6) !important;
+  --logo-orange: rgba(19, 19, 21, 0.6) !important;
+  --logo-purple: rgba(19, 19, 21, 0.6) !important;
+  --logo-green: rgba(19, 19, 21, 0.6) !important;
+  --logo-black: rgba(19, 19, 21, 0.6) !important;
+}
+
+@media only screen and (min-width: 481px) {
+  .login-card {
+    margin-top: 2.5%;
+    padding: 3rem;
+    width: 26.375rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .login-card {
+    margin-top: 2.5%;
+    border: none;
+    width: 95%;
+    padding: 1rem;
+  }
+}
+
+.card-header {
+  background-color: var(--omrs-color-bg-medium-contrast);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--omrs-color-bg-low-contrast);
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.card-content {
+  border: none;
+  padding: 0.625rem 0.25rem 0.625rem 1rem;
+  border-radius: 0;
+}
+
+.card {
+  width: 21.75rem;
+  margin: 0.5rem 1rem;
+}
+
+.location-submit-btn {
+  width: 21.75rem;
+}
+
+.location-card {
+  max-width: 60rem;
+}
+
+.location-radio-group {
+  margin-top: 0.625rem;
+  background-color: var(--omrs-color-bg-high-contrast);
+  list-style: none;
+  display: grid;
+  grid-auto-columns: 23rem;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(20, min-content);
+  margin-left: 0.5rem;
+  position: relative;
+}
+
+.location-radio-group input[type="radio"] {
+  opacity: 0;
+  width: 0;
+}
+
+.location-radio-group label {
+  display: flex;
+  background-color: var(--omrs-color-bg-high-contrast);
+  color: var(--omrs-color-ink-high-contrast);
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--omrs-color-bg-low-contrast);
+  border-radius: 0.25rem;
+  width: 20.5rem;
+}
+
+.welcome-msg {
+  text-transform: capitalize;
+}
