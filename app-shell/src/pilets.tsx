@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { Extend, useGlobalState } from 'piral-core';
+import { PiralPlugin, useGlobalState } from 'piral-core';
 import { userHasAccess } from './privileges';
 import { PiralSessionApi, PiralConfigApi, PiralCheckerApi } from './types';
 
-export function createSessionApi(): Extend<PiralSessionApi> {
+export function createSessionApi(): PiralPlugin<PiralSessionApi> {
   return (ctx) => ({
     getSession() {
       return ctx.readState((s) => s.session);
@@ -14,7 +14,7 @@ export function createSessionApi(): Extend<PiralSessionApi> {
   });
 }
 
-export function createConfigApi(): Extend<PiralConfigApi> {
+export function createConfigApi(): PiralPlugin<PiralConfigApi> {
   const readConfig = (name: string, defaultConfig: any) => {
     const key = `config-${name}`;
     const current = localStorage.getItem(key);
@@ -56,7 +56,7 @@ export function createConfigApi(): Extend<PiralConfigApi> {
   });
 }
 
-export function createCheckerApi(): Extend<PiralCheckerApi> {
+export function createCheckerApi(): PiralPlugin<PiralCheckerApi> {
   return (ctx) => ({
     canAccess(privilege) {
       const user = ctx.readState((s) => s.session);

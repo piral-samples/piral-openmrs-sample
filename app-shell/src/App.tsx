@@ -21,9 +21,9 @@ const instance = createInstance({
     components: layout,
     errorComponents: errors,
     provider: Provider,
-    session: false,
+    session: undefined,
   },
-  extendApi: [
+  plugins: [
     createSessionApi(),
     createMenuApi(),
     createNotificationsApi(),
