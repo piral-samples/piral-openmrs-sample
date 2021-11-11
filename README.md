@@ -1,6 +1,10 @@
-# Piral OpenMRS Sample
+[![Piral Logo](https://github.com/smapiot/piral/raw/develop/docs/assets/logo.png)](https://piral.io)
 
-This is a playground repository for demonstration purposes. It works against a publicly available instance of [OpenMRS](https://openmrs.org).
+# [Piral Sample](https://piral.io) &middot; [![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/smapiot/piral/blob/main/LICENSE) [![Gitter Chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/piral-io/community)
+
+> Piral OpenMRS Sample
+
+:zap: This is a playground repository for demonstration purposes. It works against a publicly available instance of [OpenMRS](https://openmrs.org).
 
 ## Installation Instructions
 
