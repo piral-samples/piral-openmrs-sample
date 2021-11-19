@@ -6,6 +6,8 @@
 
 :zap: This is a playground repository for demonstration purposes. It works against a publicly available instance of [OpenMRS](https://openmrs.org).
 
+You can visit this demo at [openmrs.samples.piral.cloud/](https://openmrs.samples.piral.cloud/).
+
 ## Installation Instructions
 
 To keep things simple this repository contains multiple folders that should / could be treated as individual repositories. Its **not** a monorepo, as all these folders come with their own *package.json* / infrastructure.
